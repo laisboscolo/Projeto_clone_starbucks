@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Starbucks Clone</title>
+    <!-- link do favicon -->
+    <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-icon">
 </head>
 <body>
-    
+    <!-- tag semantica 'principal' -->
+     <main>
+        <!-- div para o circulo -->
+         <div class="circulo"></div>
+
+
+         <!-- header -->
+         <header>
+            <!-- logotipo -->
+             <a href="#"><img src="assets/logo.png" alt="logo da empresa"></a>
+
+             <!-- div menu hamburguer -->
+              <!-- onclick= funçao do javascript ";" chamada do javascript-->
+              <div class="toggle" onclick="toggleMenu();"></div>
+
+              <!-- links -->
+               <ul class="links">
+                <li><a href="https://www.starbucks.com.br/">Home</a></li>
+                <li><a href="https://www.starbucks.com.br/">Menu</a></li>
+                <li><a href="https://www.starbucks.com.br/cafe">Novidades</a></li>
+                <li><a href="https://www.starbucks.com.br/lojas">Lojas</a></li>
+               </ul>
+         </header>
+
+         <!-- Conteudo pricipal -->
+          <div class="conteudo">
+            <div class="textoPrincipal">
+                <!-- titulo -->
+                 <h2>Não é apenas um café é: <br><span>Starbucks</span></h2>
+                 <!-- texto -->
+                  <p>Descubra um mundo de sabores inesqueciveis. Cada colheirada é uma explosão de sabores irrestiveis que vão te conquistar</p>
+
+                  <!-- botao -->
+                <a href="https://www.starbucks.com.br/home" target="_blank">Veja mais!</a>
+            </div>
+            <!-- imagem grande(copo)  -->
+             <div class="imgBox"><img src="assets/img1.png" alt="copo" class="starbucks"></div>
+          </div>
+          <!-- imagem copos pequenos -->
+           <ul class="sorvetes">
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png')changeCircleColor('#017143')></li>
+              <li><img src="assets/thumb3.png" alt=""></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png'); changeCircleColor('#d75b1')"></li>
+           </ul>
+     </main>
 </body>
 </html>
